@@ -1,0 +1,162 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+    <meta http-equiv="Page-Enter" content="progid:DXImageTransform.Microsoft.Fade(duration=1)">
+    <meta http-equiv="Page-Exit" content="progid:DXImageTransform.Microsoft.Fade(duration=1)">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta http-equiv="Content-Type" content="text/html; charset = UTF-8" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="Stylesheet" href="style.css" type="text/css" />
+    <title>Trần Thanh Tùng</title>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="counterup.js"></script>
+    <script type="text/javascript" src="timroi.js"></script>
+    <script language="javascript">
+
+        title_tmp1 = document.title
+
+        if (title_tmp1.indexOf(">>") != -1) {
+
+            title_tmp2 = title_tmp1.split(">>");
+
+            title_last = "*~*" + title_tmp2[1];
+
+            title_last = title_last + "*~*" + title_tmp2[2];
+
+        } else {
+
+
+
+            if (title_tmp1.indexOf("*~*") != -1) {
+
+                title_tmp2 = title_tmp1.split("*~*");
+
+                title_last = "*~*" + title_tmp2[1];
+
+                if (title_last == "*~*") { title_last = "*~*" };
+
+                if (title_last == "*~*") { title_last = "*~*" };
+
+            }
+
+            else { title_last = " Gửi cho #****... " }
+
+        }
+
+        title_new = "" + title_last + ""
+
+        step = 0
+
+        function flash_title() {
+
+            step++
+
+            if (step == 8) { step = 1 }
+
+            if (step == 1) { document.title = '[~~~~*' + title_new + '*~~~~]' }
+
+            if (step == 2) { document.title = '[~~~*~' + title_new + '-*~~~]' }
+
+            if (step == 3) { document.title = '[~~*~~' + title_new + '~~*~~]' }
+
+            if (step == 4) { document.title = '[~*~~~' + title_new + '~~~*~]' }
+
+            if (step == 5) { document.title = '[~~*~~' + title_new + '~~*~~]' }
+
+            if (step == 6) { document.title = '[~~~*~' + title_new + '~*~~~]' }
+
+            if (step == 7) { document.title = '[~~~~*' + title_new + '*~~~~]' }
+
+            setTimeout("flash_title()", 180);
+
+        }
+
+        flash_title();
+
+        function scrollToBottom(elm_id) {
+            var elm = document.getElementById(elm_id);
+            try {
+                elm.scrollTop = elm.scrollHeight;
+            }
+            catch (e) {
+                var f = document.createElement("input");
+                if (f.setAttribute) f.setAttribute("type", "text")
+                if (elm.appendChild) elm.appendChild(f);
+                f.style.width = "0px";
+                f.style.height = "0px";
+                if (f.focus) f.focus();
+                if (elm.removeChild) elm.removeChild(f);
+            }
+        }
+
+    </script>
+    
+</head>
+<body onload="javascript:teclear();">
+    <div id="TextCounter">
+        <strong>Tùng</strong>
+        <img src="heartr.png" />
+        <strong>#****</strong> <span id="counter">
+            <script type="text/javascript">
+                // January: tháng 1
+                // February: tháng 2
+                // March: tháng 3
+                // April: tháng 4
+                // May: tháng 5
+                // June: tháng 6
+                // July: tháng 7
+                // August: tháng 8
+                // September: tháng 9
+                // October: tháng 10
+                // November: tháng 11
+                // December: tháng 12
+                new CountUp('June 14 2019 0:00:00', 'counter', "...  ");
+            </script>
+        </span>
+    </div>
+    <div id="BgContent">
+        <div id="copyright">
+            From: Trần Thanh Tùng
+        </div>
+        <div id="TextContent">
+        </div>
+        <div id="MusicPlayer">
+            <iframe src="http://www.nhaccuatui.com/mh/background/CPJGonvrIb57" width="1" height="1" frameborder="0" allowfullscreen></iframe><br />
+        </div>
+    </div>
+    <div id="canvas">
+    </div>
+    <script type="text/javascript" src="protoclass.js"></script>
+    <script type="text/javascript" src="box2d.js"></script>
+    <script type="text/javascript" src="Main.js"></script>
+    <script language="javascript" type="text/javascript">
+        mensaje =
+'<font size="6" face="Courier New" color="#fff">Những lá thư chưa gửi....<br></font>' + ' <br>' +
+
+'<font color="#fff" size="4">Những lúc rảnh rỗi, tớ thường giành thời gian để vào trang cá nhân của cậu..chỉ là muôn biết những ngày trôi qua cậu như thế nào. Đôi lúc đọc những dòng chia sẽ, những cảm nghĩ của cậu,những lúc cậu buồn, thất vọng, suy sụp..tưởng chừng tớ có thể bất chấp "cái tôi" của tớ để mạnh dạn click vào 1 lời bình luận,1 chia sẽ,1 lời khuyên đến cậu, động viên cậu..hay ít ra tớ có thể làm điều gì đó để cậu cười... nhưng tớ đã ko làm như thế...tớ hiểu mình nên làm gì...chỉ có thể im lặng và quan sát cậu thôi!! </font><br>' +'<br>    ' +
+
+'<font size="4" color="#fff">Và cũng nhiều khi tớ đăng tus chỉ muốn thấy được cậu like hay cmt, khi không thấy điều đó, tớ buồn lắm... </font><br>' +
+
+'<br>    ' +
+
+'<font size="4" color="#fff">Chúng ta mới quen biết nhau thôi nhỉ?? Nhớ lần đầu tiên thấy cậu nhảy, khi đó tớ thấy cậu rất tuyệt và khi đó tớ tưởng cậu lớn hơn tớ nên nhiều khi hơi e ngại. Từ khi tiếp xúc với cậu nhiều hơn, tớ cảm thấy được tớ thích cậu, và hằng ngày thứ tình cảm đó tăng dần lên, nhiều khi tưởng chừng không chịu nổi nữa, chỉ muốn nói hết với cậu </font><br>' +
+
+'  <font size="4" color="#fff"> Tớ luôn đứng nhìn cậu từ phía sau..hãy mạnh dạn bước đi cậu nhé. Nếu sau này bên cạnh cậu, sánh bước cùng cậu ko phải là tớ..thì tớ vẫn luôn là người đi phía sau cậu, dõi theo cậu...và luôn cầu nguyện cho cậu.! Hy vọng sẽ có 1 thiên thần nào đó thay tớ yêu cậu nhiều như tớ yêu cậu...! </font>' +
+'                    <br>' +
+
+'<p align="left"> <font face="Courier New" color="#fff" size="6">Mong cậu lúc nào cũng tươi vui mãi nhé.!! </font></p>' +
+'                    <br>' +
+'  <font size="4" color="#fff"> </font>';
+        line = 0;
+        cursor = '_';
+        function teclear() {
+            if (line == mensaje.length) cursor = '';
+            document.getElementById('TextContent').innerHTML = mensaje.substring(0, line) + cursor;
+            var objDiv = document.getElementById("TextContent");
+            objDiv.scrollTop = objDiv.scrollHeight;
+            if (line++ < mensaje.length) setTimeout("teclear()", 60);
+        }
+    </script>
+</body>
+</html>
